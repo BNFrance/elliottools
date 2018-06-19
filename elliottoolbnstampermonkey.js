@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Elliottools BN
 // @namespace    http://*.blastingnews.com
-// @version      3.0
+// @version      4.0
 // @updateURL    https://github.com/BNFrance/elliottools/raw/master/elliottoolbnstampermonkey.js
 // @downloadURL  https://github.com/BNFrance/elliottools/raw/master/elliottoolbnstampermonkey.js
 // @description  Elliottools BN buttons
@@ -56,10 +56,10 @@ div.appendChild(a2);
 
 // Button 3
 var a3 = document.createElement('a');
-var elmNewContent3 = document.createTextNode("Debug news");
+var elmNewContent3 = document.createTextNode("Facebook debug");
 a3.appendChild(elmNewContent3);
 a3.id = "elliottools-button3";
-a3.title = "Debug news";
+a3.title = "Facebook debug";
 a3.target = "_blank";
 a3.href = "https://developers.facebook.com/tools/debug/sharing/?q="+(urlp);
 a3.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 24%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
