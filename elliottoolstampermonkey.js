@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Elliottools
 // @namespace    http://*.blastingnews.com
-// @version      2.0
+// @version      2.1
 // @description  Elliottools buttons
 // @author       Elliotto
 // @match        *://*.blastingnews.com/*/*/*/*.html*
