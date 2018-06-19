@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Elliottools Instagram
 // @namespace    https://www.instagram.com/
-// @version      3.0
+// @version      4.0
 // @updateURL    https://github.com/BNFrance/elliottools/raw/master/elliottoolsinstatampermonkey.js
 // @downloadURL  https://github.com/BNFrance/elliottools/raw/master/elliottoolsinstatampermonkey.js
 // @description  Copy data to clipboard
