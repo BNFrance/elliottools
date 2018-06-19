@@ -2,6 +2,8 @@
 // @name         Elliottools
 // @namespace    http://*.blastingnews.com
 // @version      2.1
+// @updateURL    https://github.com/BNFrance/elliottools/raw/master/elliottoolstampermonkey.js
+// @downloadURL  https://github.com/BNFrance/elliottools/raw/master/elliottoolstampermonkey.js
 // @description  Elliottools buttons
 // @author       Elliotto
 // @match        *://*.blastingnews.com/*/*/*/*.html*
