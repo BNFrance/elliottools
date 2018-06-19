@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         Elliottools
+// @name         Elliottools BN
 // @namespace    http://*.blastingnews.com
-// @version      2.1
+// @version      3.0
 // @updateURL    https://github.com/BNFrance/elliottools/raw/master/elliottoolstampermonkey.js
 // @downloadURL  https://github.com/BNFrance/elliottools/raw/master/elliottoolstampermonkey.js
-// @description  Elliottools buttons
+// @description  Elliottools BN buttons
 // @author       Elliotto
 // @match        *://*.blastingnews.com/*/*/*/*.html*
 // @match        *://*.blastingpop.com/*/*/*/*.html*
