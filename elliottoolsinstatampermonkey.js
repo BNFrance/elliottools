@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram data
 // @namespace    https://www.instagram.com/
-// @version      0.1
+// @version      2.0
 // @updateURL    https://github.com/BNFrance/elliottools/raw/master/elliottoolsinstatampermonkey.js
 // @downloadURL  https://github.com/BNFrance/elliottools/raw/master/elliottoolsinstatampermonkey.js
 // @description  Copy data to clipboard
