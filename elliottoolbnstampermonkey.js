@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Elliottools BN test
+// @name         Elliottools BN
 // @namespace    http://*.blastingnews.com
 // @version      5.1
 // @updateURL    https://github.com/BNFrance/elliottools/raw/master/elliottoolbnstampermonkey.js
