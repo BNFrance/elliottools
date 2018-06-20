@@ -1,14 +1,15 @@
 // ==UserScript==
 // @name         Elliottools BN
 // @namespace    http://*.blastingnews.com
-// @version      4.0
+// @version      5.0
 // @updateURL    https://github.com/BNFrance/elliottools/raw/master/elliottoolbnstampermonkey.js
 // @downloadURL  https://github.com/BNFrance/elliottools/raw/master/elliottoolbnstampermonkey.js
 // @description  Elliottools BN buttons
 // @author       Elliotto
 // @match        *://*.blastingnews.com/*/*/*/*.html*
 // @match        *://*.blastingpop.com/*/*/*/*.html*
-// @grant        none
+// @grant        GM_addStyle
+// @require http://code.jquery.com/jquery-1.12.4.min.js
 // ==/UserScript==
 
 (function() {
@@ -35,9 +36,7 @@ a.id = "elliottools-button1";
 a.title = "EDIT NEWS";
 a.target = "_blank";
 a.href = "http://blast.blastingnews.com/news/edit/"+(link);
-a.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 24%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
-document.body.appendChild(a);
-var elmExtra2 = document.getElementById('elliottools-buttons');
+a.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 19%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
 div.appendChild(a);
 
 // Button 2
@@ -48,9 +47,7 @@ a2.id = "elliottools-button2";
 a2.title = "EDIT VIDEO";
 a2.target = "_blank";
 a2.href = "http://blast.blastingnews.com/video/published/"+(link);
-a2.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 24%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
-document.body.appendChild(a2);
-var elmExtra3 = document.getElementById('elliottools-buttons');
+a2.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 19%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
 div.appendChild(a2);
 
 
@@ -62,9 +59,7 @@ a3.id = "elliottools-button3";
 a3.title = "Facebook debug";
 a3.target = "_blank";
 a3.href = "https://developers.facebook.com/tools/debug/sharing/?q="+(urlp);
-a3.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 24%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
-document.body.appendChild(a3);
-var elmExtra4 = document.getElementById('elliottools-buttons');
+a3.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 19%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
 div.appendChild(a3);
 
 
@@ -76,11 +71,67 @@ a4.id = "elliottools-button4";
 a4.title = "Blastingpop check";
 a4.target = "_blank";
 a4.href = urlpop;
-a4.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 24%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
-document.body.appendChild(a4);
-var elmExtra5 = document.getElementById('elliottools-buttons');
+a4.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 19%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
 div.appendChild(a4);
 
+// Button 4
+var a5 = document.createElement('a');
+var elmNewContent5 = document.createTextNode("Traffic");
+a5.appendChild(elmNewContent5);
+a5.id = "elliottools-button5";
+a5.className = "trigger_popup_fricc";
+a5.title = "Traffic";
+a5.style = "background-color: rgb(220, 50, 51);border: none;color: #f5f5f5;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;box-shadow: rgb(58, 58, 58) 2px 2px 6px;border-radius: 2px;width: 19%;height: 16px;font-style: italic;font-weight: 400;float: right;margin-left: 5px;";
+div.appendChild(a5);
+
+
+
+//CSS for popup
+GM_addStyle(".myiframepopup {margin-bottom: -200px;-ms-zoom: 0.65;-moz-transform: scale(0.65);-moz-transform-origin: 0 0;-o-transform: scale(0.65);-o-transform-origin: 0 0;-webkit-transform: scale(0.65);-webkit-transform-origin: 0 0;} .hover_bkgr_fricc{background:rgba(0,0,0,.4); cursor:; display:none; height:100%; position:fixed; text-align:center; top:0; width:100%;  z-index:10000;} .hover_bkgr_fricc .helper{display:inline-block; height:100%; vertical-align:middle;} .hover_bkgr_fricc > div {background-color: #fff; box-shadow: 10px 10px 60px #555; display: inline-block; height: auto; max-width: 1000px; min-height: 500px; vertical-align: middle; width: 60%; position: relative; border-radius: 8px; padding: 15px 5%;} .popupCloseButton {background-color: #fff; border: 3px solid #999; border-radius: 50px; cursor: pointer; display: inline-block; font-family: arial; font-weight: bold; position: absolute; top: -20px; right: -20px; font-size: 25px; line-height: 20px; width: 30px; height: 30px; text-align: center;} .popupCloseButton:hover {background-color: #ccc;} .trigger_popup_fricc {cursor: pointer;}");
+
+//jquery for popup
+$(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+//    $('.hover_bkgr_fricc').click(function(){
+//        $('.hover_bkgr_fricc').hide();
+//    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+
+// HTML for popup
+var divp = document.createElement('div');
+divp.id = "popupdiv1";
+divp.className = "hover_bkgr_fricc";
+var elmExtra6 = document.getElementById('content-page');
+elmExtra6.parentNode.insertBefore(divp, elmExtra6.nextSibling);
+
+    var span = document.createElement('span');
+    span.id = "popupspan2";
+    span.className = "helper";
+    divp.appendChild(span);
+
+    var divafterspan = document.createElement('div');
+    divp.appendChild(divafterspan);
+
+        var divclose = document.createElement('div');
+        divclose.className = "popupCloseButton";
+        divclose.innerHTML = "x"
+        divafterspan.appendChild(divclose);
+
+        var pcontent = document.createElement('p');
+        pcontent.innerHTML = "Copy this ID and search it on the page below: <br><b>" + link + "</b>";
+        divafterspan.appendChild(pcontent);
+
+        var iframepopup = document.createElement('iframe');
+        iframepopup.className = "myiframepopup";
+        iframepopup.id = "myiframepopup";
+        iframepopup.setAttribute("src", "https://blast.blastingnews.com/news/analysis/");
+        iframepopup.style.width = "1050px";
+        iframepopup.style.height = "615px";
+        divafterspan.appendChild(iframepopup);
 
 })();
-
